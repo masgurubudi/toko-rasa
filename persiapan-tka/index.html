@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<meta name="description" content="Persiapan TKA Matematika Kabupaten Pacitan: try out per materi SD dan SMP, Try Out TKA SMP 2027, dan halaman guru rekap nilai." />
+<link rel="icon" href="data:," />
+<title>Persiapan TKA Matematika — rasa.web.id</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#ffffff;
+    --bg-soft:#f2f7f3;
+    --bg-deep:#0c3b2e;
+    --bg-deep-2:#0a3226;
+    --ink:#14231c;
+    --ink-soft:#42544a;
+    --ink-faint:#6b7f73;
+    --line:#dce7de;
+    --brand:#0e5c40;
+    --brand-strong:#0a4630;
+    --brand-ink:#ffffff;
+    --amber:#e8930c;
+    --amber-soft:#fdf0da;
+    --wa:#1faa55;
+    --wa-strong:#178a43;
+    --card:#ffffff;
+    --chip:#e7f2ea;
+    --shadow:0 18px 40px -18px rgba(12,59,46,.28);
+    --radius:18px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0d1512;
+      --bg-soft:#122019;
+      --bg-deep:#082a1f;
+      --bg-deep-2:#06231a;
+      --ink:#eef5f0;
+      --ink-soft:#b9cbc0;
+      --ink-faint:#8ba294;
+      --line:#22382d;
+      --brand:#2ea36f;
+      --brand-strong:#35b57a;
+      --brand-ink:#06130d;
+      --amber:#f2a93b;
+      --amber-soft:#2c2110;
+      --wa:#22b45e;
+      --wa-strong:#2bc768;
+      --card:#122019;
+      --chip:#173325;
+      --shadow:0 18px 40px -18px rgba(0,0,0,.6);
+    }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:16.5px;line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand)}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 26px}
+  @media (min-width:720px){ .wrap{padding:0 48px} }
+  h1,h2,h3{font-family:"Bricolage Grotesque","Plus Jakarta Sans",sans-serif;line-height:1.12;margin:0;letter-spacing:-.01em}
+  h2{font-size:clamp(1.7rem,4.5vw,2.5rem);font-weight:800}
+  h3{font-size:1.22rem;font-weight:700}
+  p{margin:0}
+  .section{padding:56px 0}
+  .section-soft{background:var(--bg-soft)}
+  .sec-head{max-width:720px;margin-bottom:32px}
+  .sec-head p{margin-top:10px;color:var(--ink-soft);font-size:1.05rem}
+
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;justify-content:center;
+    min-height:52px;padding:13px 24px;border-radius:999px;
+    font-weight:700;font-size:1rem;text-decoration:none;border:2px solid transparent;
+    transition:transform .15s ease, background .15s ease, border-color .15s ease;
+  }
+  .btn:active{transform:scale(.98)}
+  .btn-brand{background:var(--brand);color:var(--brand-ink)}
+  .btn-brand:hover{background:var(--brand-strong)}
+  .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+  .btn-ghost:hover{border-color:var(--brand);color:var(--brand)}
+  .btn-wa{background:var(--wa);color:#fff}
+  .btn-wa:hover{background:var(--wa-strong)}
+  .btn-light{background:#fff;color:#0a4630}
+  .btn-light:hover{background:var(--amber-soft)}
+
+  .hero{background:var(--bg-deep);color:#eaf4ee;position:relative;overflow:hidden}
+  .hero::after{
+    content:"";position:absolute;inset:auto -120px -160px auto;width:420px;height:420px;
+    border-radius:50%;background:radial-gradient(circle,rgba(232,147,12,.28),transparent 65%);
+    pointer-events:none;
+  }
+  .hero-inner{padding:64px 26px 72px;position:relative;z-index:1;max-width:1120px;margin:0 auto}
+  @media (min-width:720px){ .hero-inner{padding-left:48px;padding-right:48px} }
+  @media (min-width:920px){ .hero-inner{padding-top:84px;padding-bottom:88px} }
+  .hero-badge{
+    display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);
+    border:1px solid rgba(255,255,255,.22);color:#ffe1ae;border-radius:999px;
+    padding:7px 14px;font-size:.86rem;font-weight:700;letter-spacing:.02em;width:fit-content;
+  }
+  .hero h1{font-size:clamp(2.3rem,6.5vw,3.9rem);font-weight:800;color:#fff;margin-top:20px;text-transform:uppercase}
+  .hero h1 .accent{color:var(--amber)}
+  .hero .sub{margin-top:18px;color:#c6ddd0;font-size:1.1rem;max-width:34em}
+  .hero-note{margin-top:16px;font-size:.92rem;color:#9dbfab}
+
+  .cards{display:grid;gap:16px}
+  @media (min-width:820px){ .cards{grid-template-columns:repeat(3,1fr)} }
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:26px 24px 28px;box-shadow:var(--shadow);
+    display:flex;flex-direction:column;
+  }
+  .tag{
+    display:inline-block;background:var(--amber-soft);color:#8a5a00;border-radius:999px;
+    padding:5px 13px;font-size:.82rem;font-weight:800;letter-spacing:.03em;text-transform:uppercase;width:fit-content;
+  }
+  @media (prefers-color-scheme: dark){ .tag{color:var(--amber)} }
+  .tag-guru{background:var(--chip);color:var(--brand)}
+  .card h3{margin-top:14px}
+  .card .desc{color:var(--ink-soft);margin-top:10px;font-size:.99rem}
+  .meta{
+    display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;
+  }
+  .meta span{
+    border:1.5px solid var(--line);border-radius:999px;padding:4px 12px;
+    font-weight:700;font-size:.86rem;color:var(--ink-soft);
+  }
+  .card .btn{margin-top:auto}
+  .card .cta{margin-top:24px}
+  .note{
+    background:var(--chip);border-radius:14px;padding:14px 16px;margin-top:24px;font-size:.97rem;
+  }
+  .note strong{color:var(--brand)}
+
+  footer{padding:36px 0 110px;color:var(--ink-faint);font-size:.92rem}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:10px 28px;align-items:center;justify-content:space-between}
+  footer strong{color:var(--ink)}
+  footer a{min-height:36px;display:inline-flex;align-items:center}
+
+  .wa-float{
+    position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:50;
+    display:inline-flex;align-items:center;gap:9px;background:var(--wa);color:#fff;text-decoration:none;
+    font-weight:800;padding:14px 20px;border-radius:999px;box-shadow:0 12px 28px -8px rgba(23,138,67,.55);
+    min-height:56px;font-size:1rem;
+  }
+  .wa-float:hover{background:var(--wa-strong)}
+  @media (max-width:480px){ .wa-float{padding:14px 17px} }
+</style>
+</head>
+<body>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="hero-inner">
+    <span class="hero-badge">📝 MGMP Matematika Kabupaten Pacitan</span>
+    <h1>Persiapan <span class="accent">TKA Matematika</span></h1>
+    <p class="sub">Satu pintu masuk untuk semua try out TKA Matematika — untuk siswa dan guru. Kabupaten Pacitan.</p>
+    <p class="hero-note">Nilai langsung muncul setelah selesai dan tersimpan otomatis.</p>
+  </div>
+</header>
+
+<main>
+  <!-- ================= SISWA ================= -->
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Untuk Siswa</h2>
+        <p>Pilih try out-nya, isi nama, kelas, kecamatan, dan sekolah — lalu kerjakan.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <span class="tag">Siswa</span>
+          <h3>Siap TKA SD 2027 (Per Materi)</h3>
+          <p class="desc">4 paket sesuai domain CP: Bilangan Rasional, Objek Geometri, Pengukuran, Penyajian dan Penggunaan Data.</p>
+          <div class="meta"><span>4 paket</span><span>30 soal</span><span>60 menit</span></div>
+          <div class="cta"><a class="btn btn-brand" href="https://masgurubudi.github.io/tka-sd-pacitan/" target="_blank" rel="noopener">Mulai Try Out →</a></div>
+        </article>
+        <article class="card">
+          <span class="tag">Siswa</span>
+          <h3>Siap TKA SMP 2027 (Per Materi)</h3>
+          <p class="desc">6 materi esensial: Bilangan Dasar, Bilangan Lanjutan &amp; Aljabar Awal, Aljabar, Geometri Datar, Geometri Lanjutan &amp; Bangun Ruang, Data dan Peluang.</p>
+          <div class="meta"><span>6 materi</span><span>30 soal</span><span>60 menit</span><span>Kelas VII–IX</span></div>
+          <div class="cta"><a class="btn btn-brand" href="https://masgurubudi.github.io/tryout-tka-kabupaten/" target="_blank" rel="noopener">Mulai Try Out →</a></div>
+        </article>
+        <article class="card">
+          <span class="tag">Siswa</span>
+          <h3>Siap TKA SMP 2027</h3>
+          <p class="desc">30 soal acak sesuai ketentuan resmi TKA: 15 Pilihan Ganda, 10 PGK-MCMA, 5 Benar/Salah.</p>
+          <div class="meta"><span>30 soal</span><span>75 menit</span><span>Kelas IX</span><span>127 sekolah</span></div>
+          <div class="cta"><a class="btn btn-brand" href="https://masgurubudi.github.io/tka-matematika-2027/" target="_blank" rel="noopener">Mulai Try Out →</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GURU ================= -->
+  <section class="section section-soft">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Untuk Guru</h2>
+        <p>Rekap nilai semua siswa per sekolah, siap diunduh.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <span class="tag tag-guru">Guru</span>
+          <h3>Rekap Nilai SD Per Materi</h3>
+          <p class="desc">Matriks nilai semua siswa, saringan kecamatan, ekspor Excel.</p>
+          <div class="meta"><span>Matriks Nilai</span><span>Ekspor Excel</span></div>
+          <div class="cta"><a class="btn btn-ghost" href="https://masgurubudi.github.io/tka-sd-pacitan/guru.html" target="_blank" rel="noopener">Buka Halaman Guru →</a></div>
+        </article>
+        <article class="card">
+          <span class="tag tag-guru">Guru</span>
+          <h3>Rekap Nilai SMP Per Materi</h3>
+          <p class="desc">Matriks nilai semua siswa, saringan kecamatan, ekspor Excel.</p>
+          <div class="meta"><span>Matriks Nilai</span><span>Ekspor Excel</span></div>
+          <div class="cta"><a class="btn btn-ghost" href="https://masgurubudi.github.io/tryout-tka-kabupaten/guru.html" target="_blank" rel="noopener">Buka Halaman Guru →</a></div>
+        </article>
+        <article class="card">
+          <span class="tag tag-guru">Guru</span>
+          <h3>Rekap Nilai SMP</h3>
+          <p class="desc">Matriks Nilai, Peringkat, Semua Percobaan, Rekap Kabupaten, ekspor CSV.</p>
+          <div class="meta"><span>Matriks Nilai</span><span>Peringkat</span><span>Rekap Kabupaten</span></div>
+          <div class="cta"><a class="btn btn-ghost" href="https://masgurubudi.github.io/tka-matematika-2027/guru.html" target="_blank" rel="noopener">Buka Halaman Guru →</a></div>
+        </article>
+      </div>
+      <p class="note">🔑 Halaman guru masuk dengan <strong>NPSN sekolah sebagai PIN</strong>.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><strong>Dibuat oleh MGMP Matematika Kabupaten Pacitan</strong><br />Design by <a href="https://rasa.web.id" target="_blank" rel="noopener">rasa.web.id</a></div>
+    <a href="https://rasa.web.id">← Kembali ke Toko RASA</a>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/6281803394240?text=Halo%20Toko%20RASA%2C%20saya%20ingin%20bertanya%20tentang%20Try%20Out%20TKA%20Matematika." target="_blank" rel="noopener">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.13.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>
+  Chat WhatsApp
+</a>
+
+</body>
+</html>
